@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: relative;
+}
+
+.star {
+    width: 2px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+@keyframes moveStars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
+}
+
+#stars {
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* animation: moveStars 50s linear infinite; */
+}
+
+#stars .star:nth-child(odd) {
+    animation-duration: 1.5s;
+}
+
+#stars .star:nth-child(even) {
+    animation-duration: 2.5s;
+}
