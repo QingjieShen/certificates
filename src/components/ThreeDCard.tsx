@@ -7,6 +7,11 @@ interface ThreeDCardProps {
     imageUrl: string;
 }
 
+const range = [-10, 10]
+function getRootatedValue(range: Array<number>, value: number, length: number) {
+    return value / length * (range[1] - range[0]) + range[0];
+}
+
 const ThreeDCard: React.FC<ThreeDCardProps> = ({ title, description, imageUrl }) => {
     const [displayHD, setDisplayHD] = React.useState(false);
 
@@ -16,8 +21,22 @@ const ThreeDCard: React.FC<ThreeDCardProps> = ({ title, description, imageUrl })
 
     return (
         <>
-            <div className="card-container" onClick={() => setDisplayHD(!displayHD)
-            }>
+            <div 
+                className="card-container" 
+                onClick={() => setDisplayHD(!displayHD)}
+                onMouseMove={(e) => {
+                    const {offsetX, offsetY} = e.nativeEvent;
+                    const {offsetWidth, offsetHeight} = e.currentTarget;
+                    const rx = -getRootatedValue(range, offsetY, offsetWidth);
+                    const ry = getRootatedValue(range, offsetX, offsetHeight);
+                    e.currentTarget.style.setProperty('--rx', `${Math.round(rx)}deg`);
+                    e.currentTarget.style.setProperty('--ry', `${Math.round(ry)}deg`);
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.setProperty('--rx', `0deg`);
+                    e.currentTarget.style.setProperty('--ry', `0deg`);
+                }}
+            >
                 <div className="img-container">
                     <img src={imageUrl} alt={title} className="card-image" />
                 </div>

@@ -30,7 +30,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    /* animation: moveStars 50s linear infinite; */
+    z-index: -1;
 }
 
 .stars-container .star:nth-child(odd) {
