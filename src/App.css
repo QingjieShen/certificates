@@ -47,7 +47,7 @@ body {
     grid-template-columns: 1fr;
     gap: 40px;
     margin: 0 auto;
-    padding: 40px 80px;
+    padding: 40px 100px;
     justify-content: center;
     align-items: center;
     color: aliceblue;

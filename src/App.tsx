@@ -10,7 +10,7 @@ import sbAI from '../src/assets/certificates/scrimba_the-ai-engineer-path.jpg'
 
 function generateStars() {
   const stars = []
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 200; i++) {
     const star = {
       left: `${Math.random() * 100}vw`,
       top: `${Math.random() * 100}vh`,
@@ -27,6 +27,21 @@ const stars = generateStars()
 
 const certificates = [
   {
+    title: 'Advanced React',
+    description: 'Scrimba',
+    imageUrl: sbREACT
+  },
+  {
+    title: 'The AI Engineer Path',
+    description: 'Scrimba',
+    imageUrl: sbAI
+  },
+  {
+    title: 'Fullstack for Front-End Engineers',
+    description: 'Frontend Master',
+    imageUrl: fmFS
+  },
+  {
     title: 'JavaScript Algorithms and Data Structures',
     description: 'freeCodeCamp',
     imageUrl: fccJSAlgo
@@ -42,25 +57,10 @@ const certificates = [
     imageUrl: fmDB
   },
   {
-    title: 'Fullstack',
-    description: 'Frontend Master',
-    imageUrl: fmFS
-  },
-  {
     title: 'React.js Essential Training',
     description: 'LinkedIn Learning',
     imageUrl: ldREACT
   },
-  {
-    title: 'Advanced React',
-    description: 'Scrimba',
-    imageUrl: sbREACT
-  },
-  {
-    title: 'The AI Engineer Path',
-    description: 'Scrimba',
-    imageUrl: sbAI
-  }
 ]
 
 function App() {
