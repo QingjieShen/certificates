@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Medal</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <path data-name="layer5"
+  fill="#7b8baf" d="M37 9h13.988l-.015-8H11v8h26z"></path>
+  <path data-name="layer4" d="M25 30.158a15.918 15.918 0 0 1 12 .021V9H25z"
+  fill="#fff"></path>
+  <path data-name="layer3" d="M25 9H11v6c0 4 2.037 6.055 3.986 8l8.066 8.061.017.033A15.927 15.927 0 0 1 25 30.158z"
+  fill="#71c3f3"></path>
+  <path data-name="layer2" d="M47.008 23c1.947-1.946 4-4 4-8l-.016-6H37v21.179a15.918 15.918 0 0 1 1.893.925l.065-.044z"
+  fill="#f27e7c"></path>
+  <circle data-name="layer1" cx="31" cy="44.995" r="16" fill="#ffdda4"></circle>
+  <path data-name="opacity" d="M31 1H11v14c0 4 2.037 6.055 3.986 8l8.066 8.061.017.033c.072-.041.147-.076.22-.115A16 16 0 0 0 31 60.995z"
+  fill="#000064" opacity=".1"></path>
+</svg>
