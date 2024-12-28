@@ -12,20 +12,8 @@
     cursor: pointer;
 }
 
-@keyframes breath-shadow {
-    0% {
-        box-shadow: 0 0 10px 5px #ffffff3b;
-    }
-    50% {
-        box-shadow: 0 0 15px 5px #ffffff5b;
-    }
-    100% {
-        box-shadow: 0 0 10px 5px #ffffff3b;
-    }
-}
-
 .card-container:hover {
-    animation: breath-shadow 3s infinite ease-in;
+    border: 1px solid #afa9a944;
 }
 
 .img-container {
