@@ -1,9 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
     background: black;
     position: relative;
 }
@@ -27,19 +24,45 @@ body {
     to { transform: translateY(-100vh); }
 }
 
-#stars {
+.stars-container {
     width: 100vw;
-    height: 200vh;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
     /* animation: moveStars 50s linear infinite; */
 }
 
-#stars .star:nth-child(odd) {
+.stars-container .star:nth-child(odd) {
     animation-duration: 1.5s;
 }
 
-#stars .star:nth-child(even) {
+.stars-container .star:nth-child(even) {
     animation-duration: 2.5s;
+}
+
+.certificates {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 80px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+
+@media screen and (min-width: 768px) {
+    .certificates {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .certificates {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
 }

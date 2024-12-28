@@ -9,8 +9,10 @@ interface ThreeDCardProps {
 
 const ThreeDCard: React.FC<ThreeDCardProps> = ({ title, description, imageUrl }) => {
     return (
-        <div className="three-d-card">
-            <img src={imageUrl} alt={title} className="card-image" />
+        <div className="card-container">
+            <div className="img-container">
+                <img src={imageUrl} alt={title} className="card-image" />
+            </div>
             <div className="card-content">
                 <h2 className="card-title">{title}</h2>
                 <p className="card-description">{description}</p>
