@@ -9,7 +9,7 @@ interface ThreeDCardProps {
 
 const range = [-10, 10]
 function getRootatedValue(range: Array<number>, value: number, length: number) {
-    return value / length * (range[1] - range[0]) + range[0];
+    return value / length * (range[1] - range[0]) + range[0] / 2;
 }
 
 const ThreeDCard: React.FC<ThreeDCardProps> = ({ title, description, imageUrl }) => {
