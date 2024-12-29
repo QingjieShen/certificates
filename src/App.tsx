@@ -28,37 +28,37 @@ const stars = generateStars()
 const certificates = [
   {
     title: 'Advanced React',
-    description: 'Scrimba',
+    description: 'Issued by Scrimba',
     imageUrl: sbREACT
   },
   {
     title: 'The AI Engineer Path',
-    description: 'Scrimba',
+    description: 'Issued by Scrimba',
     imageUrl: sbAI
   },
   {
     title: 'Fullstack for Front-End Engineers',
-    description: 'Frontend Master',
+    description: 'Issued by Frontend Master',
     imageUrl: fmFS
   },
   {
     title: 'JavaScript Algorithms and Data Structures',
-    description: 'freeCodeCamp',
+    description: 'Issued by freeCodeCamp',
     imageUrl: fccJSAlgo
   },
   {
     title: 'Responsive Web Design',
-    description: 'freeCodeCamp',
+    description: 'Issued by freeCodeCamp',
     imageUrl: fccRWD
   },
   {
     title: 'Databases',
-    description: 'Frontend Master',
+    description: 'Issued by Frontend Master',
     imageUrl: fmDB
   },
   {
     title: 'React.js Essential Training',
-    description: 'LinkedIn Learning',
+    description: 'Issued by LinkedIn Learning',
     imageUrl: ldREACT
   },
 ]
